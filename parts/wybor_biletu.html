@@ -1,0 +1,12 @@
+<div class="content push">
+  <div class="button"
+    onclick="router.redirect('bilet_miejski.html', {ticketType: 'city'}).then(function() {ticketMachine.cancel()})"
+    x-text="t('ticketCity')">
+    BILET MIEJSKI
+  </div>
+  <div class="button"
+    onclick="router.redirect('bilet_metro.html', {ticketType: 'metro'}).then(function() {metroTicketMachine.cancel()})"
+    x-text="t('ticketMetro')">
+    BILET METROPOLITALNY
+  </div>
+</div>
